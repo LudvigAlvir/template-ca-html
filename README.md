@@ -56,6 +56,9 @@ This is a list of requirements for each page that need to be fullfilled to pass 
 
 To run tests locally need to have Node and NPM installed on your computer.
 In your terminal run the command:
+
 `npm i`
+
 Then when you want to run the tests on your project run the command:
+
 `npm run test`
