@@ -48,7 +48,7 @@ This is a list of requirements for each page that need to be fullfilled to pass 
 
 ### Contact
 
-- Has to have a form with at least two fields with the names:
+- Has to have a form with at least two fields with the ID's:
   - name
   - message
 
