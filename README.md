@@ -37,6 +37,7 @@ This is a list of requirements for each page that need to be fullfilled to pass 
 - All pages have header, main, footer.
 - All pages have a nav element
 - All pages have a unique h1
+- All images must have alt text
 
 ### Home
 
