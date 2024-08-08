@@ -143,6 +143,17 @@ test("check if all pages have a header, main, footer and nav element", async ({
 	}
 });
 
+test("check if all images have alt text", async ({ page }) => {
+	for (const route of routes) {
+		await test.step(route, async () => {
+			await page.goto(route);
+			//this could probably be one line but I'm not sure how to do that :)
+			await expect(page.getByRole("img")).not.toHaveAttribute("alt", "");
+			await expect(page.getByRole("img")).toHaveAttribute("alt");
+		});
+	}
+});
+
 // TEMPLATE
 /* test("check if ", async ({ page }) => {
 	for (const route of routes) {
