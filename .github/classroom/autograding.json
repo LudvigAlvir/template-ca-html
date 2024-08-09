@@ -1,0 +1,12 @@
+{
+	"tests": [
+		{
+			"name": "Playwright Tests",
+			"setup": "npm install",
+			"run": "npx playwright install chromium && npx playwright test --reporter=junit --project=chromium",
+			"input": "",
+			"output": "results.xml",
+			"points": 10
+		}
+	]
+}

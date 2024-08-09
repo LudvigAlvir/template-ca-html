@@ -1,0 +1,778 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\playwright.config.js",
+    "rootDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 10
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/noro-lal/Documents/GitHub/template-ca-html/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.46.0",
+    "workers": 10,
+    "webServer": {
+      "command": "npm run start",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "common.spec.js",
+      "file": "common.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "check if all pages have a title",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 5420,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.not.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.not.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:55:27\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:38:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 27,
+                      "line": 55
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Not Acceptable\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Not Found\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m \t}\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 27,
+                        "line": 55
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.not.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 53 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Not Acceptable\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Not Found\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m \t}\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:55:27\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:38:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 5231,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.not.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.not.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:55:27\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:38:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 27,
+                          "line": 55
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Not Acceptable\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"Not Found\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m\"\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m \t}\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.706Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 27,
+                    "line": 55
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-58e485e27940885b691f",
+          "file": "common.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "check if all pages have a unique h1",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 251,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:64:22\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:61:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 22,
+                      "line": 64
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 62 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m h1 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$$(\u001b[32m\"h1\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m \t\t\texpect(h1\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m \t}\n \u001b[90m 67 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 22,
+                        "line": 64
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 62 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m h1 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$$(\u001b[32m\"h1\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m \t\t\texpect(h1\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m \t}\n \u001b[90m 67 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:64:22\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:61:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 81,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:64:22\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:61:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 22,
+                          "line": 64
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 62 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m h1 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$$(\u001b[32m\"h1\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m \t\t\texpect(h1\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m \t}\n \u001b[90m 67 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.753Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 22,
+                    "line": 64
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-db35f682e342a5d463e4",
+          "file": "common.spec.js",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "check if all pages have a favicon",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 255,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:74:24\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:71:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 24,
+                      "line": 74
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 72 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m favicon \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'link[rel=\"icon\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m \t\t\texpect(favicon)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m \t}\n \u001b[90m 77 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 24,
+                        "line": 74
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 72 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m favicon \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'link[rel=\"icon\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m \t\t\texpect(favicon)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m \t}\n \u001b[90m 77 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:74:24\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:71:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 77,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:74:24\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:71:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 24,
+                          "line": 74
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 72 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m favicon \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'link[rel=\"icon\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m \t\t\texpect(favicon)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t\t\t                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m \t}\n \u001b[90m 77 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.744Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 24,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-a37105056edbec0248d6",
+          "file": "common.spec.js",
+          "line": 69,
+          "column": 1
+        },
+        {
+          "title": "check if all headings are in order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 264,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 57
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.656Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-010e1a93cf6880b54c37",
+          "file": "common.spec.js",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "check if all pages have a description",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 255,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:110:28\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:107:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 28,
+                      "line": 110
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 108 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m description \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'meta[name=\"description\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 110 |\u001b[39m \t\t\texpect(description)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 111 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 112 |\u001b[39m \t}\n \u001b[90m 113 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 28,
+                        "line": 110
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 108 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m description \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'meta[name=\"description\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 110 |\u001b[39m \t\t\texpect(description)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 111 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 112 |\u001b[39m \t}\n \u001b[90m 113 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:110:28\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:107:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 71,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:110:28\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:107:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 28,
+                          "line": 110
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 108 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m description \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'meta[name=\"description\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 110 |\u001b[39m \t\t\texpect(description)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 111 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 112 |\u001b[39m \t}\n \u001b[90m 113 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.761Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 28,
+                    "line": 110
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-9694e7ef8fa8aff711b4",
+          "file": "common.spec.js",
+          "line": 105,
+          "column": 1
+        },
+        {
+          "title": "check if all pages have a viewport tag",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "failed",
+                  "duration": 301,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:119:25\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:116:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 25,
+                      "line": 119
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 118 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m viewport \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'meta[name=\"viewport\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m \t\t\texpect(viewport)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 121 |\u001b[39m \t}\n \u001b[90m 122 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 25,
+                        "line": 119
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 117 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 118 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m viewport \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'meta[name=\"viewport\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m \t\t\texpect(viewport)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 121 |\u001b[39m \t}\n \u001b[90m 122 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:119:25\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:116:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 88,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:119:25\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:116:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 25,
+                          "line": 119
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 118 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m viewport \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m'meta[name=\"viewport\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m \t\t\texpect(viewport)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 121 |\u001b[39m \t}\n \u001b[90m 122 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.721Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 25,
+                    "line": 119
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-5ba6f6ad01414c14c222",
+          "file": "common.spec.js",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "check if all pages have a lang attribute",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "status": "failed",
+                  "duration": 344,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:128:21\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:125:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 21,
+                      "line": 128
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 126 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 127 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m lang \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"html[lang]\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m \t\t\texpect(lang)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m \t}\n \u001b[90m 131 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 21,
+                        "line": 128
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 126 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 127 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m lang \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"html[lang]\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m \t\t\texpect(lang)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m \t}\n \u001b[90m 131 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:128:21\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:125:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 97,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:128:21\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:125:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 21,
+                          "line": 128
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 126 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 127 |\u001b[39m \t\t\t\u001b[36mconst\u001b[39m lang \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"html[lang]\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m \t\t\texpect(lang)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeNull()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m \t}\n \u001b[90m 131 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.773Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 21,
+                    "line": 128
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-a40f6203d724ad9efd3f",
+          "file": "common.spec.js",
+          "line": 123,
+          "column": 1
+        },
+        {
+          "title": "check if all pages have a header, main, footer and nav element",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "failed",
+                  "duration": 258,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:138:35\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:136:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 35,
+                      "line": 138
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 136 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(route\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 137 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 138 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"header\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 139 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"nav\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"main\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 141 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"footer\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 35,
+                        "line": 138
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 136 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(route\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 137 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 138 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"header\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 139 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"nav\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"main\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 141 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"footer\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:138:35\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:136:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 79,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:138:35\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:136:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 35,
+                          "line": 138
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 136 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(route\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 137 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 138 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"header\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 139 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"nav\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"main\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 141 |\u001b[39m \t\t\texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"footer\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.718Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 35,
+                    "line": 138
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-522cf48e169a9d28b60f",
+          "file": "common.spec.js",
+          "line": 132,
+          "column": 1
+        },
+        {
+          "title": "check if all images have alt text",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "status": "failed",
+                  "duration": 5249,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByRole('img')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.not.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByRole('img')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.not.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img')\u001b[22m\n\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:151:44\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:148:3",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                      "column": 44,
+                      "line": 151
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 149 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 150 |\u001b[39m \t\t\t\u001b[90m//this could probably be one line but I'm not sure how to do that :)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 151 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"img\"\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"alt\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 152 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"img\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"alt\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 153 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m \t}\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                        "column": 44,
+                        "line": 151
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByRole('img')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.not.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img')\u001b[22m\n\n\n\u001b[0m \u001b[90m 149 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 150 |\u001b[39m \t\t\t\u001b[90m//this could probably be one line but I'm not sure how to do that :)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 151 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"img\"\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"alt\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 152 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"img\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"alt\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 153 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m \t}\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:151:44\u001b[22m\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:148:3\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "http://127.0.0.1:3000",
+                      "duration": 5051,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByRole('img')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.not.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByRole('img')\nExpected string: not \u001b[32m\"\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n  \u001b[2m- expect.not.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img')\u001b[22m\n\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:151:44\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js:148:3",
+                        "location": {
+                          "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                          "column": 44,
+                          "line": 151
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 149 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\n \u001b[90m 150 |\u001b[39m \t\t\t\u001b[90m//this could probably be one line but I'm not sure how to do that :)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 151 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"img\"\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"alt\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m \t\t\t                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 152 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"img\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"alt\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 153 |\u001b[39m \t\t})\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m \t}\u001b[0m"
+                      }
+                    }
+                  ],
+                  "startTime": "2024-08-09T10:11:41.738Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\common.spec.js",
+                    "column": 44,
+                    "line": 151
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3b6e58ca29ec01ff1fb-a0b86467129e4d64a2f2",
+          "file": "common.spec.js",
+          "line": 146,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "contact.spec.js",
+      "file": "contact.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check if page has fields with id: name and descripton",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "failed",
+                  "duration": 1705,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\contact.spec.js:9:32",
+                    "location": {
+                      "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\contact.spec.js",
+                      "column": 32,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m }) \u001b[33m=>\u001b[39m {\n \u001b[90m  8 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m \texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"#name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m \texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"#description\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\contact.spec.js",
+                        "column": 32,
+                        "line": 9
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m  7 |\u001b[39m }) \u001b[33m=>\u001b[39m {\n \u001b[90m  8 |\u001b[39m \t\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m \texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"#name\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \t                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m \texpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$(\u001b[32m\"#description\"\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\contact.spec.js:9:32\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-08-09T10:11:41.679Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\noro-lal\\Documents\\GitHub\\template-ca-html\\tests\\contact.spec.js",
+                    "column": 32,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c166cd7de27ef1fbe0cc-eb04c8ff6797df9ea989",
+          "file": "contact.spec.js",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-08-09T10:11:38.579Z",
+    "duration": 11335.488000000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 0
+  }
+}
