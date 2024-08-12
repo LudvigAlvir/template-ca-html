@@ -6,7 +6,9 @@
 	"scripts": {
 		"start": "live-server --port=3000 ",
 		"test": "npx playwright install chromium && npx playwright test --project=chromium",
-		"test:cli": "npx playwright install chromium &&  npx playwright test --reporter=list --project=chromium "
+		"test:cli": "npx playwright install chromium  && npx playwright test --reporter=list --project=chromium ",
+		"test:css": "npx csshint",
+		"test:all": "npm run test:css || true && npm run test:cli"
 	},
 	"keywords": [],
 	"author": "",

@@ -240,9 +240,12 @@ test(
 		for (const route of routes) {
 			await test.step(route, async () => {
 				await page.goto(route);
-				//this could probably be one line but I'm not sure how to do that :)
-				await expect(page.getByRole("img")).not.toHaveAttribute("alt", "");
-				await expect(page.getByRole("img")).toHaveAttribute("alt");
+				const images = await page.$$("img");
+				for (const image of images) {
+					const altText = await image.getAttribute("alt");
+					expect(altText).not.toBeNull();
+					expect(altText).not.toBe("");
+				}
 			});
 		}
 	}
