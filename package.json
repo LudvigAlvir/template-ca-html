@@ -12,6 +12,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"csshint": "^0.3.4",
 		"live-server": "^1.2.2"
 	},
 	"devDependencies": {

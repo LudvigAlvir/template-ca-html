@@ -1,10 +1,12 @@
 const { test, expect } = require("@playwright/test");
 
-const BASE_URL = "http://127.0.0.1:3000";
+/* const BASE_URL = "http://127.0.0.1:3000"; */
+const BASE_URL = "https://hyseh-project-exam-2.netlify.app/"; // Testing running it on links instead of local project
 const routes = new Set();
 routes.add(BASE_URL);
 
 // Crawling through all accessible links to find all routes, will need to be changed to allow login
+// Crawling should ignore paths with just extra / or #, and have some filtering for product/{id} so it does not take in to many
 test.beforeAll(async ({ browser }) => {
 	const page = await browser.newPage();
 	await page.goto(BASE_URL);
@@ -61,7 +63,8 @@ test("check if all pages have a unique h1", async ({ page }) => {
 		await test.step(route, async () => {
 			await page.goto(route);
 			const h1 = await page.$$("h1");
-			expect(h1.length).toBe(1);
+			//soft will make all steps run it seems like, not fully tested
+			expect.soft(h1.length).toBe(1);
 		});
 	}
 });
@@ -75,7 +78,7 @@ test("check if all pages have a favicon", async ({ page }) => {
 		});
 	}
 });
-
+// This is not tested enough, might be incorrect in some cases
 test("check if all headings are in order", async ({ page }) => {
 	for (const route of routes) {
 		await test.step(route, async () => {
