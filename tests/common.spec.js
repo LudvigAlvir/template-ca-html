@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 
-/* const BASE_URL = "http://127.0.0.1:3000"; */
-const BASE_URL = "https://hyseh-project-exam-2.netlify.app/"; // Testing running it on links instead of local project
+const BASE_URL = "http://127.0.0.1:3000";
+
 const routes = new Set();
 routes.add(BASE_URL);
 
