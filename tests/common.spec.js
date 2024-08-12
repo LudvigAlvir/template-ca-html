@@ -1,4 +1,5 @@
 const { test, expect } = require("@playwright/test");
+const { rules } = require("./rules.json");
 
 const BASE_URL = "http://127.0.0.1:3000";
 
@@ -40,8 +41,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"Each HTML page requires a unique title that encapsulates the page's context, such as <title>About</title>. See these resources for more information: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title | See course content --> A Basic HTML Page: https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#a-basic-html-page",
+			description: rules.html["unique-title-provided"],
 		},
 	},
 	async ({ page }) => {
@@ -73,8 +73,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"Each HTML page requires a unique <h1> element that serves as the most important heading on the page. See these resources for more information: https://www.seoptimer.com/blog/h1-html-tag/ | See course content --> A Basic HTML Page: https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#a-basic-html-page",
+			description: rules.html["unique-<h1>-provided"],
 		},
 	},
 	async ({ page }) => {
@@ -82,7 +81,7 @@ test(
 			await test.step(route, async () => {
 				await page.goto(route);
 				const h1 = await page.$$("h1");
-				//soft will make all steps run it seems like, not fully tested
+				//soft will make all steps run, even is step before failed it seems like, not fully tested
 				expect.soft(h1.length).toBe(1);
 			});
 		}
@@ -94,8 +93,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"Favicons should appear in the corner of the website tab for added branding. See these resources for more information: https://mailchimp.com/resources/favicon-guide/ | See course content --> A Basic HTML Page: https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#a-basic-html-page",
+			description: rules.html["use-favicon"],
 		},
 	},
 	async ({ page }) => {
@@ -114,8 +112,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"The headings should be used in hierarchical order and should not skip levels. See these resources for more information: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements | See course content --> Nav element: https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#semantics",
+			description: rules.html["use-heading-hierarchy"],
 		},
 	},
 	async ({ page }) => {
@@ -152,8 +149,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"Each HTML page requires a unique meta description that tells the user what the web application is about. See these resources for more information: https://www.seobility.net/en/wiki/Meta_Description | See course content --> A Basic HTML Page:https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#a-basic-html-page",
+			description: rules.html["unique-meta-description-provided"],
 		},
 	},
 	async ({ page }) => {
@@ -171,8 +167,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"Each HTML page requires a meta viewport tag in order to access the viewport dimensions of the screen it is being displayed on for responsiveness. See these resources for more information: https://www.semrush.com/blog/viewport-meta-tag/ | See course content --> A Basic HTML Page: https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#a-basic-html-page",
+			description: rules.html["use-meta-viewport"],
 		},
 	},
 	async ({ page }) => {
@@ -191,8 +186,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"The 'lang' attribute needs to specify the langauge of the document as 'en' for English. For more information please see:: https://www.geeksforgeeks.org/what-is-the-difference-between-html-langen-and-html-langen-us/ | See course content --> : https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#a-basic-html-page",
+			description: rules.html["use-english-as-language"],
 		},
 	},
 	async ({ page }) => {
@@ -210,8 +204,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"The HTML page needs to be semantic in that the appropriate tags are used as intended. For more information please see https://www.semrush.com/blog/semantic-html5-guide/ | See course content --> Semantics: https://mollify.noroff.dev/content/feu1/html-css/module-1/intro-html?nav=programme#semantics",
+			description: rules.html["use-semantic-elements"],
 		},
 	},
 	async ({ page }) => {
@@ -232,8 +225,7 @@ test(
 	{
 		annotation: {
 			type: "Info",
-			description:
-				"Add descriptive alt text to all <img> elements. See these resources for more information: https://www.semrush.com/blog/alt-text/ | See course content --> Images in HTML: https://mollify.noroff.dev/content/feu1/html-css/module-2/images-icons#images-in-html",
+			description: rules.html["include-alt-text-for-images"],
 		},
 	},
 	async ({ page }) => {
