@@ -101,7 +101,7 @@ test(
 			await test.step(route, async () => {
 				await page.goto(route);
 				const favicon = await page.$('link[rel="icon"]');
-				expect(favicon).not.toBeNull();
+				expect.soft(favicon).not.toBeNull();
 			});
 		}
 	}
@@ -157,7 +157,7 @@ test(
 			await test.step(route, async () => {
 				await page.goto(route);
 				const description = await page.$('meta[name="description"]');
-				expect(description).not.toBeNull();
+				expect.soft(description).not.toBeNull();
 			});
 		}
 	}
@@ -175,7 +175,7 @@ test(
 			await test.step(route, async () => {
 				await page.goto(route);
 				const viewport = await page.$('meta[name="viewport"]');
-				expect(viewport).not.toBeNull();
+				expect.soft(viewport).not.toBeNull();
 			});
 		}
 	}
@@ -194,7 +194,7 @@ test(
 			await test.step(route, async () => {
 				await page.goto(route);
 				const lang = await page.$("html[lang]");
-				expect(lang).not.toBeNull();
+				expect.soft(lang).not.toBeNull();
 			});
 		}
 	}
@@ -235,8 +235,8 @@ test(
 				const images = await page.$$("img");
 				for (const image of images) {
 					const altText = await image.getAttribute("alt");
-					expect(altText).not.toBeNull();
-					expect(altText).not.toBe("");
+					expect.soft(altText).not.toBeNull();
+					expect.soft(altText).not.toBe("");
 				}
 			});
 		}
