@@ -8,7 +8,8 @@
 		"test": "npx playwright install chromium && npx playwright test --project=chromium",
 		"test:cli": "npx playwright install chromium  && npx playwright test --reporter=list --project=chromium ",
 		"test:css": "npx csshint",
-		"test:all": "npm run test:css || true && npm run test:cli"
+		"test:all": "npm run test:css || true && npm run test:cli",
+		"test:temp": "npx playwright test home.spec.js --project=chromium"
 	},
 	"keywords": [],
 	"author": "",

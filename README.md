@@ -41,7 +41,7 @@ This is a list of requirements for each page that need to be fullfilled to pass 
 
 ### Home
 
-- Has to have links to products, checkout, about and contact.
+- Has to have links to products, checkout and contact.
 
 ### List of Jackets
 
