@@ -30,6 +30,7 @@ test(
 		// LIST OF REQUIRED LINKS
 		const required = ["products", "checkout", "contact"];
 
+		// Could add toLowerCase, but i feel like routes should be in lowercase to begin with.
 		for (const route of routes) {
 			for (let i in required) {
 				if (route.includes(required[i])) {
