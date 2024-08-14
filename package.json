@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"start": "live-server --port=3000 ",
 		"test": "npx playwright install chromium && npx playwright test --project=chromium",

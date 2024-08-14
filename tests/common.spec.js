@@ -1,5 +1,13 @@
-const { test, expect } = require("@playwright/test");
-const { rules } = require("./rules.json");
+/* const { test, expect } = require("@playwright/test");
+const { rules } = require("./rules.json"); */
+
+//changed to using modules
+import { test, expect } from "@playwright/test";
+const rules = (
+	await import("./rules.json", {
+		assert: { type: "json" },
+	})
+).default.rules;
 
 const BASE_URL = "http://127.0.0.1:3000";
 

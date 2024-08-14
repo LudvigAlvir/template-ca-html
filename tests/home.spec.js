@@ -1,5 +1,7 @@
-const { test, expect } = require("@playwright/test");
+/* const { test, expect } = require("@playwright/test"); */
 
+//changed to using modules
+import { test, expect } from "@playwright/test";
 const BASE_URL = `http://127.0.0.1:3000`;
 
 // not tested enough
