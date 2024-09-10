@@ -5,7 +5,7 @@ const { rules } = require("./rules.json"); */
 import { test, expect } from "@playwright/test";
 const rules = (
 	await import("./rules.json", {
-		assert: { type: "json" },
+		with: { type: "json" },
 	})
 ).default.rules;
 
@@ -95,6 +95,8 @@ test(
 		}
 	}
 );
+
+// need more testing
 
 test(
 	"check if all pages have a favicon",
@@ -240,6 +242,8 @@ test(
 		for (const route of routes) {
 			await test.step(route, async () => {
 				await page.goto(route);
+				// Wait for content that comes from api to load, there is a better way to do this
+				await page.waitForLoadState("networkidle");
 				const images = await page.$$("img");
 				for (const image of images) {
 					const altText = await image.getAttribute("alt");
